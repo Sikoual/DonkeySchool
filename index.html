@@ -5,91 +5,128 @@
     <meta charset="UTF-8">
     <link rel="stylesheet" href="style.css">
     <meta name="description" content="Challenge 2 : Acquiert de bon réflexes.">
-    <title>Inte Challenge 2</title>
+    <title>Inte Challenge 3</title>
 </head>
 <body>
-<h1>Mon Portfolio</h1>
-<nav>
-    <ul>
-        <a href="#projects" title="projects"><li>Projets</li></a>
-        <a href="#etudes" title="etudes"><li>Etudes</li></a>
-        <a href="#articles" title="articles"><li>Articles</li></a>
-        <a href="#contact" title="contact"><li>Contact</li></a>
-    </ul>
-</nav>
-<article>
-    <img src="montagne.jpeg" alt="fonds paysage montagne">
-
-    <h2>Prenom Nom</h2>
+<header>
+    <h1>Mon Portfolio</h1>
+    <nav>
+        <ul>
+            <li class="deroulant">
+                <a href="#projects">PROJECTS</a>
+                <ul class="sous-menu">
+                    <li><a href="#barbershop">Barber Shop</a></li>
+                    <li><a href="#supermarket">Supermarket</a></li>
+                    <li><a href="#car-vendor">Car Vendor</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="#etudes">ETUDES</a>
+            </li>
+            <li class="deroulant">
+                <a href="#articles">ARTICLES</a>
+                <ul class="sous-menu">
+                    <li><a href="#articles">Article 1</a></li>
+                    <li><a href="#article2">Article 2</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="#contact">CONTACT</a>
+            </li>
+        </ul>
+    </nav>
+</header>
+<article class="hero">
+    <img src="https://images.unsplash.com/photo-1506744038136-46273834b3fb?crop=entropy&cs=tinysrgb&fm=jpg&ixlib=rb-1.2.1&q=80&raw_url=true&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170" alt="fonds paysage montagne">
+    <h2>Maxime Hu</h2>
 </article>
 <section id="projects">
-    <article>
-        <h3>Projet 1</h3>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab accusantium atque blanditiis corporis ducimus, fuga harum illum obcaecati qui, quisquam saepe, sapiente tempore vero voluptate?</p>
-        <button>En savoir plus</button>
-    </article>
-    <article>
-        <h3>Projet 2</h3>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab accusantium atque blanditiis corporis ducimus, fuga harum illum obcaecati qui, quisquam saepe, sapiente tempore vero voluptate?</p>
-        <button>En savoir plus</button>
-    </article>
-    <article>
-        <h3>Projet 3</h3>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab accusantium atque blanditiis corporis ducimus, fuga harum illum obcaecati qui, quisquam saepe, sapiente tempore vero voluptate?</p>
-        <button>En savoir plus</button>
-    </article>
+    <h2>PROJETS RÉALISÉS</h2>
+    <div class="project-container">
+        <article class="project">
+            <img id="barbershop" src="https://images.unsplash.com/photo-1472851294608-062f824d29cc?crop=entropy&cs=tinysrgb&fm=jpg&ixlib=rb-1.2.1&q=80&raw_url=true&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170" alt="barber-shop">
+            <h3>Barber Shop</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab accusantium atque blanditiis corporis ducimus, fuga harum illum obcaecati qui, quisquam saepe, sapiente tempore vero voluptate?</p>
+            <button>En savoir plus</button>
+        </article>
+        <article class="project">
+            <img id="supermarket" src="https://images.unsplash.com/photo-1441123285228-1448e608f3d5?crop=entropy&cs=tinysrgb&fm=jpg&ixlib=rb-1.2.1&q=80&raw_url=true&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170" alt="panier repas">
+            <h3>Supermarket</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab accusantium atque blanditiis corporis ducimus, fuga harum illum obcaecati qui, quisquam saepe, sapiente tempore vero voluptate?</p>
+            <button>En savoir plus</button>
+        </article>
+        <article class="project">
+            <img id="car-vendor" src="https://images.unsplash.com/photo-1617917572835-5ab878656dcf?crop=entropy&cs=tinysrgb&fm=jpg&ixlib=rb-1.2.1&q=80&raw_url=true&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=764" alt="car-vendor">
+            <h3>Car Vendor</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab accusantium atque blanditiis corporis ducimus, fuga harum illum obcaecati qui, quisquam saepe, sapiente tempore vero voluptate?</p>
+            <button>En savoir plus</button>
+        </article>
+    </div>
 </section>
 <section id="etudes">
     <h2>Etudes</h2>
-
-    <img src="imagemaxime.jpeg" alt="image profil Maxime Hu">
-
-    <aside>
-        <ul>
-            <li>Nom</li>
-            <li>Prenom</li>
-            <li>Age</li>
-            <li>Adresse Email</li>
-            <li>Numero tel</li>
+    <aside class="identity">
+        <img src="https://images.unsplash.com/photo-1518020382113-a7e8fc38eac9?ixlib=rb-1.2.1&raw_url=true&q=80&fm=jpg&crop=entropy&cs=tinysrgb&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=717" alt="image profil Maxime Hu">
+        <ul class="identity-list">
+            <li>First name : Doe</li>
+            <li>Last name : John</li>
+            <li>Age : 50</li>
+            <li>E mail : lorem@ipsum.fr</li>
+            <li>Number : +333333333333</li>
         </ul>
     </aside>
-    <section>
-        <p>Date</p>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias, vel.</p>
-        <p>Date</p>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias, vel.</p>
-        <p>Date</p>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias, vel.</p>
-        <p>Date</p>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias, vel.</p>
+    <section class="experiences">
+        <div class="expe">
+            <p>2022</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias, vel.</p>
+        </div>
+        <div class="expe">
+            <p>2021</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias, vel.</p>
+        </div>
+        <div class="expe">
+            <p>2020</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias, vel.</p>
+        </div>
+        <div class="expe">
+            <p>2019</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias, vel.</p>
+        </div>
     </section>
 </section>
 <section id="articles">
-    <article>
-
-        <img src="cafeteria.jpeg" alt="cafeteria">
-
-        <h2>Article 1</h2>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam aliquid amet asperiores doloremque doloribus enim labore numquam quibusdam, sequi veritatis!</p>
-        <button>Lire</button>
-        <button>Commentaires</button>
-    </article>
-    <article>
-        <img src="plage.jpeg" alt="pc sur la plage">
-        <h2>Article 2</h2>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam aliquid amet asperiores doloremque doloribus enim labore numquam quibusdam, sequi veritatis!</p>
-        <button>Lire</button>
-        <button>Commentaires</button>
-    </article>
+    <h2>Articles</h2>
+    <div class="article-container">
+        <article class="article">
+            <img src="https://images.unsplash.com/photo-1453614512568-c4024d13c247?crop=entropy&cs=tinysrgb&fm=jpg&ixlib=rb-1.2.1&q=80&raw_url=true&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1332" alt="cafeteria">
+            <h3 id="#article1">Article 1</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam aliquid amet asperiores doloremque doloribus enim labore numquam quibusdam, sequi veritatis!</p>
+            <div class="button-container">
+                <button>Lire</button>
+                <button>Commentaires</button>
+            </div>
+        </article>
+        <article class="article">
+            <img src="https://images.unsplash.com/photo-1540554430382-ebfea7bf5965?crop=entropy&cs=tinysrgb&fm=jpg&ixlib=rb-1.2.1&q=80&raw_url=true&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687" alt="pc sur la plage">
+            <h3 id="article2">Article 2</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam aliquid amet asperiores doloremque doloribus enim labore numquam quibusdam, sequi veritatis!</p>
+            <div class="button-container">
+                <button>Lire</button>
+                <button>Commentaires</button>
+            </div>
+        </article>
+    </div>
 </section>
 <section id="contact">
+    <h2>Contacts</h2>
     <form>
         <label for="name">Nom et prénom</label>
         <input type="text" id="name" name="name">
         <label for="email">E mail</label>
         <input type="email" id="email" name="email">
-        <label for="message"></label>
+        <label for="message">Message</label>
         <textarea id="message" name="message"></textarea>
+        <button type="submit">Envoyer</button>
     </form>
 </section>
 <footer>

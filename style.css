@@ -1,0 +1,239 @@
+*,
+::before,
+::after {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+}
+
+li {
+    list-style-type: none;
+}
+
+a {
+    color: black;
+    text-decoration: none;
+}
+
+header{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 20vh;
+}
+header h1{
+    font-size: 3rem;
+    margin-bottom: 2rem;
+}
+header ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+}
+header ul > li {
+    font-size: 2rem;
+    padding: 1rem 2rem;
+    cursor: pointer;
+}
+header ul > li:hover{
+
+}
+.hero{
+    position: relative;
+}
+.hero img{
+    width: 100vw;
+    height: 500px;
+    object-fit: cover;
+    filter: brightness(30%);
+    transition: opacity 0.2s ease-in-out;
+}
+.hero img:hover{
+    opacity: 0.8;
+}
+.hero h2{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    font-size: 5rem;
+    color: white
+}
+.project-container{
+    min-height: 50vh;
+    width: 80vw;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.project img, .article img{
+    width: 300px;
+    height: 300px;
+    object-fit: cover;
+    box-shadow: rgba(50, 50, 93, 0.25) 0 50px 100px -20px, rgba(0, 0, 0, 0.3) 0 30px 60px -30px;
+    transition: opacity 0.2s ease-in-out;
+    border-radius: 3px;
+}
+
+.project img:hover, .article img:hover{
+    opacity: 0.8;
+}
+.project-container > :nth-child(2) > img{
+    filter: grayscale(100%);
+}
+.project h3, .article h3{
+    font-size: 1.5rem;
+    margin: 1rem 0;
+}
+.project p, .article p{
+    font-size: 1.2rem;
+    width: 80%;
+    margin-bottom: 1rem;
+}
+.project button, .article button, form button{
+    padding: 0.5rem 1.5rem;
+    border: none;
+    background: lightblue;
+    border-radius: 999px;
+    cursor: pointer;
+}
+#projects h2, #etudes h2, #articles h2, #contact h2{
+    font-size: 3rem;
+    text-align: center;
+    margin: 5rem 0;
+}
+
+.identity{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 40%;
+    margin: 0 auto;
+}
+.identity img{
+    width: 250px;
+    height: 300px;
+    transition: opacity 0.2s ease-in-out;
+    border-radius: 3px;
+}
+.identity img:hover{
+    opacity: 0.8;
+}
+.identity-list{
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+    font-size: 2rem;
+    gap: 2rem;
+}
+.experiences{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 40vh;
+}
+.expe{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5rem;
+    width: 100%;
+}
+.expe p{
+    font-size: 2rem;
+    padding: 1rem;
+}
+.article-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+    margin: 0 auto;
+}
+.button-container > :nth-child(2){
+    margin: 1rem 0 2rem 1rem;
+    background: #00c4ff;
+}
+.article{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.article img{
+    width: 500px;
+    height: 300px;
+    margin-bottom: 5rem;
+}
+.article h3, .article p, .article button {
+    margin: 1.5rem 0 0 5rem;
+}
+.article p, .article h3, .article button, .button-container{
+    align-self: flex-start;
+}
+form{
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    margin: 0 auto;
+}
+form label{
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+form input{
+    width: 20%;
+    margin-bottom: 2rem;
+}
+form textarea{
+    width: 90%;
+    height: 200px;
+}
+form button{
+    background: #00c4ff;
+    width: 200px;
+    height: 50px;
+    margin: 3rem 15rem 3rem 0;
+    align-self: end;
+    cursor: pointer;
+}
+footer{
+    min-height: 10vh;
+    line-height: 10vh;
+    text-align: center;
+    background: #00c4ff;
+    font-size: 2.5rem
+}
+.deroulant{
+    position: relative;
+}
+.sous-menu{
+    display: none;
+    /*display: flex;*/
+    flex-direction: column;
+    position: absolute;
+    background: #FFF;
+    box-shadow: rgba(50, 50, 93, 0.25) 0 50px 100px -20px, rgba(0, 0, 0, 0.3) 0 30px 60px -30px;
+    top: 40px;
+    left: 0;
+    z-index: 10;
+}
+nav > ul li:hover .sous-menu{
+    display: flex;
+}
+.sous-menu li {
+    font-size: 1.6rem;
+}
+nav a:hover{
+    color: deeppink;
+}

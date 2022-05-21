@@ -16,8 +16,12 @@ li {
 }
 
 a {
-    color: black;
+    color: whitesmoke;
     text-decoration: none;
+}
+body{
+    background: #333;
+    color: whitesmoke;
 }
 header{
     display: flex;
@@ -309,5 +313,14 @@ nav a:hover{
     }
     form button{
         width: 200px;
+    }
+}
+@media screen and (min-width: 600px) {
+    a{
+        color: black;
+    }
+    body{
+        background: #FFF;
+        color: black;
     }
 }

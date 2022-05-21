@@ -19,7 +19,6 @@ a {
     color: black;
     text-decoration: none;
 }
-
 header{
     display: flex;
     flex-direction: column;
@@ -28,29 +27,25 @@ header{
     min-height: 20vh;
 }
 header h1{
-    font-size: 3rem;
-    margin-bottom: 2rem;
+    font-size: 2rem;
+    margin-bottom: 1rem;
 }
 header ul {
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 2rem;
 }
 header ul > li {
-    font-size: 2rem;
-    padding: 1rem 2rem;
+    font-size: 1.4rem;
+    padding: 0.5rem 1rem;
     cursor: pointer;
-}
-header ul > li:hover{
-
 }
 .hero{
     position: relative;
 }
 .hero img{
     width: 100vw;
-    height: 500px;
+    height: 350px;
     object-fit: cover;
     filter: brightness(30%);
     transition: opacity 0.2s ease-in-out;
@@ -63,7 +58,7 @@ header ul > li:hover{
     top: 50%;
     left: 50%;
     transform: translate(-50%,-50%);
-    font-size: 5rem;
+    font-size: 3rem;
     color: white
 }
 .project-container{
@@ -71,6 +66,7 @@ header ul > li:hover{
     width: 80vw;
     margin: 0 auto;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
 }
@@ -105,6 +101,7 @@ header ul > li:hover{
     background: lightblue;
     border-radius: 999px;
     cursor: pointer;
+    margin-bottom: 1rem;
 }
 #projects h2, #etudes h2, #articles h2, #contact h2{
     font-size: 3rem;
@@ -114,16 +111,18 @@ header ul > li:hover{
 
 .identity{
     display: flex;
+    flex-direction: column;
     justify-content: space-between;
     align-items: center;
-    width: 40%;
+    width: 100%;
     margin: 0 auto;
 }
 .identity img{
-    width: 250px;
-    height: 300px;
+    width: 200px;
+    height: 250px;
     transition: opacity 0.2s ease-in-out;
     border-radius: 3px;
+    margin-bottom: 2rem;
 }
 .identity img:hover{
     opacity: 0.8;
@@ -133,8 +132,9 @@ header ul > li:hover{
     flex-direction: column;
     justify-content: start;
     align-items: start;
-    font-size: 2rem;
-    gap: 2rem;
+    font-size: 1.8rem;
+    gap: 1rem;
+    margin-bottom: 3rem;
 }
 .experiences{
     display: flex;
@@ -145,17 +145,19 @@ header ul > li:hover{
 }
 .expe{
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
-    gap: 5rem;
+    gap: 1rem;
     width: 100%;
 }
 .expe p{
-    font-size: 2rem;
+    font-size: 1.8rem;
     padding: 1rem;
 }
 .article-container{
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     width: 80%;
@@ -171,12 +173,12 @@ header ul > li:hover{
     align-items: center;
 }
 .article img{
-    width: 500px;
-    height: 300px;
-    margin-bottom: 5rem;
+    width: 300px;
+    height: 200px;
+    margin-bottom: 2rem;
 }
 .article h3, .article p, .article button {
-    margin: 1.5rem 0 0 5rem;
+    margin: 1.5rem 0 0 1.5rem;
 }
 .article p, .article h3, .article button, .button-container{
     align-self: flex-start;
@@ -192,18 +194,19 @@ form label{
     margin-bottom: 1rem;
 }
 form input{
-    width: 20%;
+    width: 100%;
+    height: 3rem;
     margin-bottom: 2rem;
 }
 form textarea{
-    width: 90%;
-    height: 200px;
+    width: 100%;
+    height: 150px;
 }
 form button{
     background: #00c4ff;
-    width: 200px;
+    width: 125px;
     height: 50px;
-    margin: 3rem 15rem 3rem 0;
+    margin: 3rem 0 3rem 0;
     align-self: end;
     cursor: pointer;
 }
@@ -212,7 +215,10 @@ footer{
     line-height: 10vh;
     text-align: center;
     background: #00c4ff;
-    font-size: 2.5rem
+    font-size: 2.5rem;
+}
+.footer h2{
+
 }
 .deroulant{
     position: relative;
@@ -236,4 +242,72 @@ nav > ul li:hover .sous-menu{
 }
 nav a:hover{
     color: deeppink;
+}
+@media screen and (min-width: 480px) {
+    body{
+        margin: initial;
+    }
+    header h1{
+        font-size: 3rem;
+        margin-bottom: 2rem;
+    }
+    header ul {
+        gap: 2rem;
+    }
+    header ul > li {
+        font-size: 2rem;
+        padding: 1rem 2rem;
+    }
+    .hero img{
+        height: 500px;
+    }
+    .hero h2{
+        font-size: 5rem;
+    }
+    .project-container{
+        flex-direction: row;
+    }
+    .identity{
+        flex-direction: row;
+        width: 40%;
+        margin-bottom: initial;
+    }
+    .identity img{
+        width: 250px;
+        height: 300px;
+    }
+    .identity-list{
+        font-size: 2rem;
+        gap: 2rem;
+        margin-bottom: initial;
+    }
+    .expe{
+        flex-direction: row;
+        gap: 5rem;
+    }
+    .expe p{
+        font-size: 2rem;
+    }
+    .article-container{
+        flex-direction: row;
+    }
+    .article img{
+        width: 500px;
+        height: 300px;
+        margin-bottom: 5rem;
+    }
+    .article h3, .article p, .article button {
+        margin: 1.5rem 0 0 5rem;
+    }
+    form input{
+        width: 20%;
+        margin-bottom: 2rem;
+    }
+    form textarea{
+        width: 90%;
+        height: 200px;
+    }
+    form button{
+        width: 200px;
+    }
 }
